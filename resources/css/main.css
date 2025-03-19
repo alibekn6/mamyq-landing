@@ -153,52 +153,6 @@
 
 
 /* DESCRIPTION */
-/* 
-.description {
-	padding: 105px 50px 0 50px;
-}
-
-.description-title {
-	font-size: 64px;
-	font-weight: bold;
-	font-family: "Montserrat", sans-serif;
-	text-align: center;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.description-card-title {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-.description-card-subtitle {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-} */
 
 
 .description {
