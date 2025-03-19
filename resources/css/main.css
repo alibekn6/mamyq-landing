@@ -5,8 +5,6 @@
 
 /* MENU  */
 .menu {
-	position: fixed;
-
 	width: 100%;
 	padding: 20px 25px;
 
@@ -35,4 +33,67 @@
 
 .menu-list a + a {
 	margin-left: 65px;
+}
+
+
+/* HEADER  */
+.header {
+	position: relative;
+
+	width: 100%;
+	height: calc(100vh - 80px);
+	padding: 0 85px;
+
+	background: url('../imgs/bg-header.jpg') no-repeat center center;
+	background-size: cover;
+
+	display: flex;
+	align-items: center;
+}
+
+.header .content {
+	max-width: 705px;
+}
+
+.header-title {
+	font-size: 96px;
+	font-weight: bold;
+	color: white;
+}
+
+.header-subtitle {
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	line-height: 30px;
+}
+
+.header-btns {
+	display: flex;
+
+	margin-top: 50px;
+}
+
+.header-btns a {
+	padding: 15px 24px;
+
+	font-size: 15px;
+	font-weight: 500;
+	color: white;
+
+	transition: .2s ease-in-out;
+}
+
+.header-btns a:first-child {
+	background: #28262C;
+}
+
+.header-btns a:last-child {
+	margin-left: 15px;
+	border: 1px solid white;
+}
+
+.header-btns a:hover {
+	background: white;
+	color: black;
 }
