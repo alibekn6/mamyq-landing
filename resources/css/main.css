@@ -97,3 +97,55 @@
 	background: white;
 	color: black;
 }
+
+
+/* ABOUT US  */
+.aboutus {
+	padding: 105px 50px 0 50px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.aboutus .content {
+	max-width: 610px;
+}
+
+.aboutus-title {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.aboutus-subtitle + .aboutus-title {
+	padding-top: 27px;
+}
+
+.aboutus-subtitle {
+	font-size: 22px;
+}
+
+
+.aboutus .btn {
+	display: block;
+	width: fit-content;
+
+	padding: 15px 24px;
+	margin-top: 30px;
+
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+	border: 1px solid black;
+
+	transition: .2s ease-in-out;
+}
+
+.aboutus .btn:hover {
+	background: black;
+	color: white;
+}
+
+.aboutus img {
+	width: 425px;
+}
