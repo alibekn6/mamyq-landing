@@ -19,6 +19,22 @@
 	width: 196px;
 }
 
+.burger { 
+	display: none; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 35px;
+	height: 30px;
+}
+
+.burger span {
+	width: 100%;
+	height: 4px;
+	background: black;
+}
+
 .menu-list a {
 	font-size: 20px;
 	color: black;
@@ -33,6 +49,16 @@
 
 .menu-list a + a {
 	margin-left: 65px;
+}
+
+.menu-list span { 
+	display: none; 
+	position: absolute;
+	top: 25px;
+	right: 35px;
+
+	font-size: 30px;
+	font-weight: bold;
 }
 
 
@@ -104,6 +130,7 @@
 	padding: 105px 50px 0 50px;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -349,4 +376,120 @@
 .social-icon img {
 	width: 24px;
 	height: 24px;
+}
+
+@media (max-width: 1300px) {
+	.description-title {
+		font-size: 45px;
+
+		padding: 0 100px;
+		margin: 100px 0;
+	}
+}
+
+@media (max-width: 1140px) {
+	.aboutus img {
+		width: 300px;
+	}
+}
+
+@media (max-width: 1010px) {
+	.aboutus img {
+		display: none;
+	}
+}
+
+@media (max-width: 865px) {
+	.image-container { display: none; }
+
+	.text-content { padding: 0; text-align: center; }
+}
+
+
+@media (max-width: 675px) {
+	.burger {
+		display: flex
+	}
+
+	.menu-list {
+		display: flex;
+		position: absolute;
+
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		background: white;
+
+		z-index: -1;
+
+		transition: .3s ease-in-out;
+		opacity: 0;
+	}
+
+	.menu-list.open {
+		opacity: 1;
+		z-index: 2;
+	}
+
+	.menu-list a {
+		font-size: 25px;
+		font-weight: 500;
+	}
+
+	.menu-list a + a {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.menu-list span { display: block; }
+
+	.header, .aboutus, .support-us {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.content {
+		max-width: 100%;
+	}
+
+	.header-title {
+		font-size: 80px;
+	}
+
+	.description-title {
+		font-size: 35px;
+		padding: 0;
+	}
+
+	.header-subtitle {
+		font-size: 20px;
+	}
+
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.contact-box + .contact-box { margin-top: 30px; }
+
+	.support-us-button {
+	    padding: 15px 30px;
+	    font-weight: 500;
+	    font-size: 18px;
+	}
+
+	.aboutus-title {
+		font-size: 40px;
+	}
+
+	.aboutus-subtitle {
+		font-size: 18px;
+	}
 }
